@@ -1,0 +1,22 @@
+{
+  "name": "csv-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
+    "generate": "cd server && npx prisma generate",
+    "studio": "cd server && npx prisma studio",
+    "db:push": "cd server && npx prisma db push"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
